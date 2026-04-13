@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Форма ввода данных</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f7fb; margin:0; padding:40px; }
+    .card { max-width: 520px; margin: 0 auto; background:#fff; padding:24px; border-radius:16px; box-shadow:0 8px 24px rgba(0,0,0,.08); }
+    h1 { margin-top:0; font-size:24px; }
+    .field { margin-bottom:16px; }
+    label { display:block; margin-bottom:8px; font-weight:600; }
+    input, select { width:100%; padding:12px 14px; border:1px solid #cfd6e4; border-radius:10px; font-size:16px; box-sizing:border-box; }
+    button { width:100%; padding:12px 14px; border:none; border-radius:10px; background:#2563eb; color:white; font-size:16px; cursor:pointer; }
+    button:hover { background:#1d4ed8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Анкета</h1>
+    <form>
+      <div class="field">
+        <label for="surname">Фамилия</label>
+        <input id="surname" name="surname" type="text" placeholder="Введите фамилию" />
+      </div>
+      <div class="field">
+        <label for="name">Имя</label>
+        <input id="name" name="name" type="text" placeholder="Введите имя" />
+      </div>
+      <div class="field">
+        <label for="patronymic">Отчество</label>
+        <input id="patronymic" name="patronymic" type="text" placeholder="Введите отчество" />
+      </div>
+      <div class="field">
+        <label for="institute">Институт</label>
+        <select id="institute" name="institute">
+          <option value="">Выберите институт</option>
+          <option value="ИТКН">ИТКН</option>
+          <option value="ЭИУ">ЭИУ</option>
+          <option value="Горный">Горный</option>
+        </select>
+      </div>
+      <button type="submit">Сохранить</button>
+    </form>
+  </div>
+</body>
+</html>
